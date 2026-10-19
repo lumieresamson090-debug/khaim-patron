@@ -1,1 +1,16 @@
+[project]
+name = "khaim-patron"
+version = "1.0.0"
+description = "K-HAIM Patron - Gestion de la flotte"
+dependencies = ["flet==0.28.3", "requests"]
+requires-python = ">=3.11"
 
+[tool.flet]
+app_name = "K-HAIM Patron"
+org_name = "com.khaim"
+product_name = "K-HAIM Patron"
+permissions = ["android.permission.INTERNET"]
+
+[tool.flet.app]
+module = "main"
+path = "src"
